@@ -1,0 +1,29 @@
+<can-component tag="pmo-home">
+
+  <style type="less">
+    display: block;
+
+    p { font-weight: bold; }
+  </style>
+
+  <view>
+    <can-import from="can-stache-route-helpers" />
+    <div class="homepage">
+      <img src="{{joinBase(node_modules/place-my-order-assets/images/homepage-heroes.jpg)}}" alt="Restaurant Table With Glasses" width="250" height="380"/>
+      <h1> Ordering food has never been easier! </h1>
+      <p> We make it way easier to order gourmet food from your favorite local Restaurants.</p>
+      <p> <a href="{{routeUrl(page="restaurants")}}" class="btn" role="button"> Choose a restaurant. </a></p>
+    </div>
+  </view>
+
+  <script type="view-model">
+    import DefineMap from 'can-define/map/';
+
+    export default DefineMap.extend({
+      message: {
+        default: 'This is the pmo-home component'
+      }
+    });
+  </script>
+
+</can-component>

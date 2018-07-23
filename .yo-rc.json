@@ -1,0 +1,9 @@
+{
+  "generator-donejs": {
+    "promptValues": {
+      "authorUrl": "http://locahost",
+      "authorName": "Mwa",
+      "authorEmail": "joseph.mwangi01@gmail.com"
+    }
+  }
+}
