@@ -5,7 +5,14 @@
     p { font-weight: bold; }
   </style>
   <view>
-    <p>{{message}}</p>
+    <div class="order-history">
+      <div class="order header">
+        <address> Name / Address / Phone</address>
+        <div class="items"> Order </div>
+        <div class="total"> Total </div>
+        <div class="actions"> Action </div>
+      </div>
+    </div>
   </view>
   <script type="view-model">
     import DefineMap from 'can-define/map/';
